@@ -1,8 +1,8 @@
-GET {{baseUrl}}/api/skills
+GET {{baseUrl}}/api/skills?tamanho=10&pagina=2
 
 ###
 
-GET {{baseUrl}}/api/skills/4
+GET {{baseUrl}}/api/skills/1
 
 ###
 
@@ -10,18 +10,18 @@ POST {{baseUrl}}/api/skills
 Content-Type: application/json
 
 {
-    "name" : "Golang"
+    "name" : "MongoDB"
 }
 
 ###
 
-PUT {{baseUrl}}/api/skills/8
+PUT {{baseUrl}}/api/skills/10
 Content-Type: application/json
 
 {
-    "name" : "Java"
+    "name" : "NOSQL"
 }
 
 ###
 
-DELETE {{baseUrl}}/api/skills/4
+DELETE {{baseUrl}}/api/skills/10

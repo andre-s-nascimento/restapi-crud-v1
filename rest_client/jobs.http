@@ -1,0 +1,44 @@
+GET {{baseUrl}}/api/jobs
+
+###
+
+GET {{baseUrl}}/api/jobs/12
+
+###
+POST {{baseUrl}}/api/jobs
+Content-Type: application/json
+
+{
+  "title": "" ,
+  "description": "Vaga para Dev Python/Flask",
+  "company": "TW",
+  "location": "P",
+  "level": "SENIOR",
+  "salary": -7500,
+  "skills" : []
+}
+
+###
+PUT {{baseUrl}}/api/jobs/1
+Content-Type: application/json
+
+{
+  "title": "Dev Java BackEnd",
+  "description": "Vaga para Dev Java/Spring",
+  "company": "TWQW",
+  "location": "Praia Grande",
+  "type": "FULL_TIME",
+  "level": "JUNIOR",
+  "salary": 2500.25,
+  "skills" : [
+    1,
+    2,
+    9
+  ]
+}
+
+###
+DELETE {{baseUrl}}/api/jobs/3
+
+###
+GET {{baseUrl}}/api/jobs/2/skills

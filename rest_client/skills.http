@@ -1,0 +1,27 @@
+GET {{baseUrl}}/api/skills
+
+###
+
+GET {{baseUrl}}/api/skills/4
+
+###
+
+POST {{baseUrl}}/api/skills
+Content-Type: application/json
+
+{
+    "name" : "Golang"
+}
+
+###
+
+PUT {{baseUrl}}/api/skills/8
+Content-Type: application/json
+
+{
+    "name" : "Java"
+}
+
+###
+
+DELETE {{baseUrl}}/api/skills/4
